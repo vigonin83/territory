@@ -1,0 +1,4 @@
+.main__layout {
+   display: grid;
+   grid-template-columns: 220px auto;
+}

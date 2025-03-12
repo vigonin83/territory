@@ -1,0 +1,38 @@
+@value colors: "../../../variables.css";
+@value content-color, gray-color, orange-color, red-color, white-color, green-color from colors;
+
+.input:-webkit-autofill,
+ .input:-webkit-autofill:hover,
+ .input:-webkit-autofill:active,
+ .input:-webkit-autofill:focus {
+     background-color: #35364d !important;
+     color: #000 !important;
+     -webkit-box-shadow: 0 0 0 1000px #f2f0f0 inset !important;
+     -webkit-text-fill-color: #000 !important;
+ }
+ 
+ .input {
+    appearance: none;
+   font-family: "Lato", sans-serif;
+   height: 33px;
+   border: 1px solid #35364D;
+   border-radius: 4px;
+   background-color: #252635;
+   padding-left: 38px;
+   padding-right: 35px;
+   font-size: 14px;
+   color: gray-color;
+   width: 100%;
+ }
+ 
+ .input:focus {
+   outline: none;
+ }
+  
+.input::placeholder {
+   font-family: "Lato", sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   letter-spacing: -0.5px;
+}
+ 

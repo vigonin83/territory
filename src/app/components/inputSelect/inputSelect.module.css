@@ -1,0 +1,43 @@
+@value colors: "../../../variables.css";
+@value content-color, gray-color, orange-color, red-color, white-color, green-color from colors;
+
+
+.select__wrapper {
+   position: relative;
+   display: flex;
+   height: 2rem;
+   border-radius: 4px;
+   overflow: hidden;
+   background-color: #252635;
+   border: 1px solid #35364d;
+   width: 100%;
+}
+
+.select {
+   appearance: none;
+   outline: 10px red;
+   border: 0;
+   box-shadow: none;
+   flex: 1;
+   padding: 0 1.2rem 0 1rem;
+   color: gray-color;
+   background-color: #252635;
+   background-image: none;
+   cursor: pointer;
+   font-size: 14px;
+}
+
+.select::-ms-expand {
+   display: none;
+}
+
+.select__arrow {
+   position: absolute;
+   width: 10px;
+   background-color: #252635;
+   cursor: pointer;
+   right: 0.5rem;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+}

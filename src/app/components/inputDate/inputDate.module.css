@@ -1,0 +1,59 @@
+@value colors: "../../../variables.css";
+@value content-color, gray-color, orange-color, red-color, white-color, green-color from colors;
+
+.input:-webkit-autofill,
+ .input:-webkit-autofill:hover,
+ .input:-webkit-autofill:active,
+ .input:-webkit-autofill:focus {
+     background-color: #35364d !important;
+     color: #000 !important;
+     -webkit-box-shadow: 0 0 0 1000px #f2f0f0 inset !important;
+     -webkit-text-fill-color: #000 !important;
+ }
+ 
+ .input {
+  display: inline-block;
+   font-family: "Lato", sans-serif;
+   height: 30px;
+   border: 1px solid #35364D;
+   background-color: #252635;
+   padding-left: 1rem;
+   font-size: 14px;
+   color: gray-color;
+   border-right: none;
+   max-width: 100%;
+ }
+
+ .input__right {
+  display: inline-block;
+   font-family: "Lato", sans-serif;
+   height: 30px;
+   border: 1px solid #35364D;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   border-left: none;
+   background-color: #252635;
+   font-size: 14px;
+   color: gray-color;
+   padding-right: 1rem;
+   max-width: 100%;
+ }
+ 
+ .input:focus {
+  outline: none;
+}
+
+.input__right:focus {
+  outline: none;
+}
+
+ 
+.input::placeholder, 
+.input::-webkit-input-placeholder, 
+.input:-ms-input-placeholder, 
+.input::-moz-placeholder {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+}
+ 

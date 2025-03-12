@@ -1,0 +1,142 @@
+@value colors: "../../../variables.css";
+@value content-color, gray-color, orange-color, red-color, white-color, green-color from colors;
+
+.card {
+   border-radius: 0.5rem;
+   background-color: content-color;
+   padding-top: 0.5rem;
+}
+
+
+.card__wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.card__title_wrapper {
+   display: flex;
+   margin-bottom: 0.5rem;
+   gap: 0.5rem;
+   margin-left: 1rem;
+}
+
+.card__title {
+   font-size: 0.88rem;
+   line-height: 140%;
+   font-weight: 700;
+   color: white-color;
+}
+
+.card__img {
+   width: 100%;
+   height: 100%;
+}
+
+.card__data {
+   padding: 1rem;
+}
+
+.card__img_container {
+   height: 175px;
+   border-radius: 0.5rem;
+}
+
+.card__data_wrapper {
+   display: grid;
+   grid-template-columns: repeat(2, 134px);
+   gap: 0.5rem;
+   font-size: 0.75rem;
+   line-height: 140%;
+   color: gray-color;
+}
+
+.card__id_wrapper {
+   display: flex;
+   gap: 0.5rem;
+   justify-self: end;
+}
+
+.card__files_wrapper {
+   display: flex;
+   gap: 0.5rem;
+}
+
+.card__files_container {
+   display: flex;
+   gap: 0.5rem;
+   justify-self: end;
+}
+
+.card__date {
+   justify-self: end;
+}
+
+.card__note {
+   color: white-color;
+} 
+
+.card__tags_container {
+   display: flex;
+   gap: 0.25rem;
+   justify-self: end;
+}
+
+.card__tags_green {
+   color: green-color;
+}
+
+.card__tags_orange {
+   color: orange-color;
+}
+
+.card__tags_red {
+   color: red-color;
+}
+
+.card__info_btn {
+   display: flex;
+   justify-content: center;
+   background-color: #656d8166;
+   border-radius: 3px;
+   height: 14px;
+   width: 14px;
+}
+
+.card__tag_btn {
+   display: flex;
+   justify-content: center;
+   background-color: #656d8166;
+   border-radius: 3px;
+   height: 14px;
+   width: 14px;
+   margin-left: 0.25rem;
+}
+
+.card__pics_container {
+   display: flex;
+   gap: 0.5rem;
+   justify-self: end;
+}
+
+.card__tag_pic {
+   display: block;
+   width: 0.5rem;
+}
+
+.card__qty_wrapper {
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+   height: 24px;
+}
+
+.card__qty_container {
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+   justify-self: end;
+}
+
+.card__qty {
+   color: #2585ec;
+}

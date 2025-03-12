@@ -1,0 +1,18 @@
+@value colors: "../../../variables.css";
+@value content-color from colors;
+
+.sidebar {
+   min-height: calc(100vh - 10px);
+   background-color: content-color;
+   border-top-right-radius: 0.5rem;
+   border-bottom-right-radius: 0.5rem;
+   min-width: 210px;
+   padding: 5px;
+}
+
+@media (max-width: 576px) {
+   .sidebar {
+      display: none;
+   }
+}
+
